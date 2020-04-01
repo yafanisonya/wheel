@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/yafanisonya/wheel/issues"
   },
-  "homepage": "https://github.com/yafanisonya/wheel#readme"
+  "homepage": "https://github.com/yafanisonya/wheel#readme",
+  "dependencies": {
+    "vue": "^2.6.11"
+  }
 }
