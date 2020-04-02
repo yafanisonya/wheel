@@ -4,33 +4,47 @@
   <meta charset="UTF-8">
   <title>Wheel</title>
   <style>
-    *{
-      margin:0;
-      padding:0;
+    * {
+      margin: 0;
+      padding: 0;
       box-sizing: border-box;
     }
-    html{
+
+    html {
       --button-height: 32px;
-      --font-size:14px;
-      --button-bg:white;
-      --button-active-bg:#eee;
-      --border-radius:4px;
-      --color:#333;
-      --border-color:#999;
-      --border-color-hover:#666;
+      --font-size: 14px;
+      --button-bg: white;
+      --button-active-bg: #eee;
+      --border-radius: 4px;
+      --color: #333;
+      --border-color: #999;
+      --border-color-hover: #666;
     }
-    #app{
-      margin:20px;
+    #app {
+      margin: 20px;
     }
-    body{
+    body {
       font-size: var(--font-size);
+    }
+  </style>
+  <style>
+    .icon{
+      width:1em;
+      height: 1em;
     }
   </style>
 </head>
 <body>
-  <div id="app">
-    <g-button></g-button>
-  </div>
-  <script src="./src/app.js"></script>
+<div id="app">
+  <g-button>
+    按钮
+  </g-button>
+  <g-button icon="setting">
+    按钮
+  </g-button>
+  <g-button icon="setting" icon-position="right">按钮</g-button>
+</div>
+<script src="./src/app.js"></script>
+<script src="//at.alicdn.com/t/font_1731193_w04zlbp8z3.js"></script>
 </body>
 </html>
