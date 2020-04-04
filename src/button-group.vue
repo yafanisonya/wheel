@@ -21,7 +21,7 @@
   .g-button-group{
     display: inline-flex;
     vertical-align: middle;
-    > .g-button{
+    > .g-button {
       border-radius: 0;
       &:not(:first-child){
         margin-left:-1px;
