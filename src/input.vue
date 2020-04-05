@@ -55,7 +55,7 @@
     > :not(:last-child){
       margin-right: .5em;
     }
-    > input {
+    > label > input {
       height:32px;
       border:1px solid $border-color;
       border-radius: 4px;
