@@ -39,8 +39,18 @@ new Vue({
     message:'hi',
   },
   created(){
-    this.$toast('我是 message',{enableHtml: false
-    })
+    this.$toast('你该吃饭了',{
+      position: 'bottom',
+      enableHtml: false,
+      closeButton: {
+        text:'进食完毕',
+        callback(){
+          console.log('吃完饭啦啦啦啦啦啦')
+        }
+      },
+      autoClose: true,
+      autoCloseDelay: 3
+      })
   },
   methods:{
     inputChange(e){
