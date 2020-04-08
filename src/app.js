@@ -27,6 +27,9 @@ Vue.component('g-footer',Footer)
 Vue.component('g-toast',Toast)
 Vue.use(plugin)
 
+import createElement from 'vue'
+const h = createElement
+
 new Vue({
   el:'#app',
   data:{
@@ -36,22 +39,15 @@ new Vue({
     message:'hi',
   },
   created(){
-    // this.$toast('我是 message',{
-    //   closeButton:{
-    //     text: '知道了',
-    //     callback(toast){
-    //       toast.log()
-    //       console.log('用户说他知道了')
-    //     }
-    //   }
-    // })
+    this.$toast('我是 message',{enableHtml: false
+    })
   },
   methods:{
     inputChange(e){
       console.log(e)
     },
     showToast(){
-      this.$toast('我是 message')
+      // this.$toast('我是 message')
     }
   }
 })
