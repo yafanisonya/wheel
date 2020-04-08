@@ -44,9 +44,18 @@ new Vue({
     inputChange(e){
       console.log(e)
     },
-    showToast(){
+    showToast1(){
+      this.showToast('top')
+    },
+    showToast2(){
+      this.showToast('middle')
+    },
+    showToast3(){
+      this.showToast('bottom')
+    },
+    showToast(position){
       this.$toast(`饥饿值：${Math.random()*100},该吃饭了`,{
-        position: 'bottom',
+        position,
         enableHtml: false,
         closeButton: {
           text:'进食完毕',
