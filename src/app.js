@@ -52,6 +52,10 @@ new Vue({
   created(){
   },
   methods:{
+    yyy(data){
+      console.log('yyy')
+      console.log(data)
+    },
     inputChange(e){
       console.log(e)
     },
