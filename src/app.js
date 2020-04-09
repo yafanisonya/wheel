@@ -51,7 +51,8 @@ new Vue({
     loading2:false,
     loading3:false,
     message:'hi',
-    selectedTab:'sports'
+    selectedTab:'sports',
+    selectedColTab:['1','2']
   },
   created(){
   },
