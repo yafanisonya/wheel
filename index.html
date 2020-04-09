@@ -44,13 +44,13 @@
 <div id="app">
 
   <div class="box">
-    <g-tabs :selected.sync="selectedTab">
+    <g-tabs :selected.sync="selectedTab" @update:selected="yyy">
       <g-tabs-head>
         <template slot="actions">
           <button>设置</button>
         </template>
-        <g-tabs-item name="woman">美女</g-tabs-item>
-        <g-tabs-item name="finance" disabled>财经</g-tabs-item>
+        <g-tabs-item name="woman" disabled>美女</g-tabs-item>
+        <g-tabs-item name="finance">财经</g-tabs-item>
         <g-tabs-item name="sports">体育</g-tabs-item>
       </g-tabs-head>
       <g-tabs-body>
