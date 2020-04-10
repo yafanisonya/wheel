@@ -1,11 +1,11 @@
 <template>
-  <div class="content">
+  <div class="g-button-content">
     <slot></slot>
   </div>
 </template>
 
 <style lang="scss" scoped>
-  .content{
+  .g-button-content{
     flex-grow: 1;
   }
 </style>

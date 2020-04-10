@@ -1,7 +1,7 @@
 <template>
   <div class="collapseItem">
     <div class="title" @click="toggle">{{title}}</div>
-    <div class="content" v-if="open"><slot></slot></div>
+    <div class="g-button-content" v-if="open"><slot></slot></div>
   </div>
 </template>
 
@@ -69,7 +69,7 @@
         border-bottom-right-radius:4px;
       }
     }
-    > .content{
+    > .g-button-content{
       padding: 8px;
     }
   }
