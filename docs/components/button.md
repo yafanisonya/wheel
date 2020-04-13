@@ -1,7 +1,7 @@
 ---
 title: 'Button 按钮'
 ---
-# 按钮
+# Button 按钮
 
 ## 基础用法
 基础的按钮用法
@@ -17,7 +17,7 @@ title: 'Button 按钮'
 :::
 
 ## 禁用状态
-按钮不可用状态,可以使用disabled属性来定义按钮是否可用，它接受一个Boolean值。
+按钮不可用状态,可以使用`disabled`属性来定义按钮是否可用，它接受一个`Boolean`值。
 
 <ClientOnly>
   <button-disabled></button-disabled>
@@ -30,7 +30,7 @@ title: 'Button 按钮'
 :::
 
 ## 图标按钮
-设置icon属性，使用icon-position也可以设置 icon 位置，可以使用自定义图标。
+设置`icon`属性，使用`icon-position`也可以设置`icon`位置，可以使用自定义图标。
 
 <ClientOnly>
   <button-icon></button-icon>
