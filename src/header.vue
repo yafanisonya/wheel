@@ -5,5 +5,6 @@
 </template>
 
 <style lang="scss" scoped>
-  .header{}
+  .header{
+  }
 </style>

@@ -1,8 +1,8 @@
 <template>
-  <div class="wrapper" :class="{error}">
+  <div class="wheel-toast" :class="{error}">
     <label>
 <!--      <input :value="value" type="text" :disabled="disabled" :readonly="readonly">-->
-      <input type="text" :value="value" :disabled="disabled" :readonly="readonly"
+      <input type="text" :value="value" :disabled="disabled" :readonly="readonly" placeholder="请输入内容"
              @change="$emit('change',$event.target.value)"
              @input="$emit('input',$event.target.value)"
              @focus="$emit('focus',$event.target.value)"
@@ -48,7 +48,7 @@
   $font-size:12px;
   $box-shadow-color:rgba(0,0,0,0.5);
   $red:#F1453D;
-  .wrapper{
+  .wheel-toast{
     font-size: $font-size;
     display:inline-flex;
     align-items:center;

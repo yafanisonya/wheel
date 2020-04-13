@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper" :class="toastClasses">
+  <div class="wheel-toast" :class="toastClasses">
     <div class="toast" ref="toast">
       <div class="message">
         <slot v-if="!enableHtml"></slot>
@@ -45,9 +45,6 @@
           return ['top','bottom','middle'].indexOf(value) >= 0
         }
       }
-    },
-    created() {
-      console.log(this.closeButton)
     },
     computed:{
       toastClasses(){
@@ -104,7 +101,7 @@
     0% {opacity:0;}
     100%{opacity: 1;}
   }
-  .wrapper{
+  .wheel-toast{
     position:fixed;
     left: 50%;
     transform: translateX(-50%);

@@ -16,7 +16,7 @@
     },
     mounted() {
       this.$children.forEach((vm)=>{
-        if(vm.$options.name === 'WheelSider'){
+        if(vm.$options.name === 'WheelSider' || vm.$options.name === 'WheelHideSider'){
           this.layoutClass.hasSider = true
         }
       })
@@ -29,7 +29,6 @@
     flex-grow:1;
     display: flex;
     flex-direction: column;
-    border:1px solid red;
     &.hasSider{
       flex-direction: row;
     }
