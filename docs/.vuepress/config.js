@@ -8,7 +8,7 @@ module.exports = {
     nav: [
       {text: '主页', link:'/',target:'_self'},
       {text: '文档', link:'/install/',target:'_self'},
-      {text: '交流', link:'https://github.com/yafanisonya'},
+      {text: '交流', link:'https://gitee.com/fanison'},
     ],
     sidebar: [
       {
